@@ -1,0 +1,129 @@
+.footer{
+	position: relative;
+	margin-top: em(120);
+	background-color: #252525;
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__section-contacts{
+		position: relative;
+		padding-top: em(30);
+		padding-bottom: em(30);
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: center;
+		gap: em(230);
+		border-bottom: em(1) solid #303030;
+	}
+	&__adress,
+	&__phone,
+	&__clock{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__adress-icon,
+	&__phone-icon,
+	&__clock-icon{
+		position: relative;
+		width: em(20);
+		img{
+			width: 100%;
+		}
+	}
+	&__adress-title,
+	&__phone-title,
+	&__clock-title{
+		position: relative;
+		font-size: em(16);
+		font-weight: 400;
+		margin-top: em(22);
+		text-align: center;
+		color: white;
+		font-family: 'HelveticaNeue';
+	}
+	&__adress-subtitle,
+	&__phone-subtitle,
+	&__clock-subtitle{
+		position: relative;
+		font-size: em(14);
+		font-weight: 400;
+		text-align: center;
+		color: white;
+		margin-top: em(16);
+		opacity: 0.8;
+		font-family: 'HelveticaNeue';
+	}
+	&__lable{
+		position: relative;
+		padding-top: em(30);
+		padding-bottom: em(30);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__lable-pic{
+		width: em(207);
+		img{
+			width: 100%;
+		}
+	}
+	&__lable-copuright{
+		width: em(349);
+		margin-top: em(20);
+		img{
+			width: 100%;
+		}
+	}
+}
+
+@media (max-width: 1600px){
+	.footer__adress-title,
+	.footer__phone-title,
+	.footer__clock-title{
+		font-size: em(24);
+	}
+	.footer__adress-subtitle,
+	.footer__phone-subtitle,
+	.footer__clock-subtitle{
+		font-size: em(24);
+	}
+	.footer__adress-icon,
+	.footer__phone-icon,
+	.footer__clock-icon{
+		font-size: em(33);
+	}
+}
+@media (max-width: 540px){
+	.footer {
+		padding-top: em(40);
+	}
+	.footer__adress-title,
+	.footer__phone-title,
+	.footer__clock-title{
+		font-size: em(44);
+	}
+	.footer__adress-subtitle,
+	.footer__phone-subtitle,
+	.footer__clock-subtitle{
+		font-size: em(44);
+		padding-bottom: em(20);
+	}
+	.footer__adress-icon,
+	.footer__phone-icon,
+	.footer__clock-icon{
+		font-size: em(53);
+	}
+	.footer__lable-pic{
+		width: em(400);
+	}
+}

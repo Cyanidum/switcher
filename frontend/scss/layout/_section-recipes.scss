@@ -1,0 +1,193 @@
+.recipes{
+	position: relative;
+	margin-top: em(90);
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__recipes-underline{
+		margin-top: em(58);
+	}
+	&__news{
+		position: relative;
+		margin-top: em(40);
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		gap: em(30);
+	}
+	&__news-main{
+		position: relative;
+		width: em(540);
+		height: em(510);
+		background: url(../../../public/img/side-01-bg.png);
+		background-repeat: no-repeat;
+		background-size: contain;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__news-time{
+		position: relative;
+		margin-top: em(60);
+		text-align: center;
+		font-family: 'HelveticaNeue';
+	}
+	&__news-date{
+		position: relative;
+		margin-top: em(65);
+		text-align: center;
+		color: white;
+		font-size: em(14);
+		font-weight: 400;
+		font-family: 'HelveticaNeue';
+	}
+	&__news-title{
+		position: relative;
+		margin-top: em(25);
+		font-size: em(24);
+		max-width: em(211);
+		text-align: center;
+		font-weight: 400;
+		color: white;
+		line-height: 1.6;
+		font-family: 'HelveticaNeue';
+	}
+	&__news-author{
+		position: relative;
+		margin-top: em(45);
+		color: white;
+		font-size: em(14);
+		text-align: center;
+		font-family: 'HelveticaNeue';
+	}
+	&__news-popularity{
+		position: relative;
+		margin: em(80) auto em(0) auto;
+		display: flex;
+		gap: em(24);
+	}
+	&__news-side{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		gap: em(30);
+	}
+	&__side-02,
+	&__side-03,
+	&__side-01{
+		position: relative;
+		padding: em(30);
+		background-color: #252525;
+		display: flex;
+		border-radius: em(10);
+		width: em(540);
+		gap: em(11);
+		flex-direction: column;
+		justify-content: start;
+		align-items: start;
+		
+	}
+	&__side-02-info,
+	&__side-03-info,
+	&__side-01-info{
+		position: relative;
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__side-02-time,
+	&__side-03-time,
+	&__side-01-time{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: em(15);
+	}
+	&__side-02-popularity,
+	&__side-03-popularity,
+	&__side-01-popularity{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		gap: em(15);
+	}
+	&__side-02{
+		background-image: url(../../../public/img/side-02-bg.png);
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+	&__side-01,
+	&__side-03{
+		transition: .3s ease-in-out;
+		&:hover{
+			background-color: #34C759;
+		}
+		&:hover .recipes__side-01-title{
+			color: black;
+		}
+		&:hover .recipes__side-01-date{
+			color: black;
+		}
+		&:hover .recipes__side-03-title{
+			color: black;
+		}
+		&:hover .recipes__side-03-date{
+			color: black;
+		}
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+@media (max-width: 1600px){
+	.recipes__news-main{
+		height: em(624);
+		background-size: cover;
+	}
+	.recipes__news-date{
+		font-size: em(20);
+	}
+	.recipes__news-author{
+		font-size: em(20);
+	}
+}
+@media (max-width: 1100px){
+	.recipes__news-main{
+		height: em(795);
+		background-size: cover;
+	}
+	.recipes__news-date{
+		font-size: em(25);
+	}
+	.recipes__news-author{
+		font-size: em(25);
+	}
+	.recipes__news-title{
+		font-size: em(30);
+	}
+}
+@media (max-width: 540px){
+	.recipes__news-main{
+		height: em(1685);
+		background-size: cover;
+	}
+	.recipes__news-date{
+		font-size: em(50);
+	}
+	.recipes__news-author{
+		font-size: em(55);
+	}
+	.recipes__news-title{
+		font-size: em(50);
+	}
+	
+}

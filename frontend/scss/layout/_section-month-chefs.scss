@@ -1,0 +1,64 @@
+.month-chefs{
+	position: relative;
+	margin-top: em(90);
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+	&__chefs-underline{
+		margin: em(58) auto em(58) auto;
+	}
+	&__chefs-cv{
+		position: relative;
+		margin-top: em(20);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	&__annette,
+	&__greg,
+	&__gregory{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+		width: em(350);
+	}
+	&__annette-info,
+	&__greg-info,
+	&__gregory-info{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: start;
+		align-items: center;
+		gap: em(24);
+	}
+	&__annette-collage,
+	&__gregory-collage,
+	&__greg-collage{
+		position: relative;
+		margin-top: em(35);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		gap: em(30);
+	}
+}
+@media (max-width: 540px) {
+	.month-chefs__chefs-cv{
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		gap: em(80);
+	}
+	.month-chefs__gregory,
+	.month-chefs__annette,
+	.month-chefs__greg{
+		width: 100%;
+		align-items: center;
+	}
+}

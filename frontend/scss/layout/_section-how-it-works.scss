@@ -1,0 +1,118 @@
+.how-it-works{
+	position: relative;
+	margin-top: em(90);
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__underline{
+		margin-top: em(58);
+	}
+	&__blocks{
+		position: relative;
+		margin-top: em(50);
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		gap: em(27);
+	}
+	&__meals,
+	&__choose,
+	&__deliveries,
+	&__tasty{
+		position: relative;
+		width: em(255);
+		border-radius: em(5);
+		transition: 0.3s ease-in-out;
+		user-select: none;
+		&:hover{
+			background-color: #34C759;
+			transform: scale(1.1);
+		}
+		&:hover .how-it-works__block-title{
+			color: black;
+		}
+		&:hover .how-it-works__block-subtitle{
+			color: black;
+		}
+		&:hover .how-it-works__block-underline{
+			background-color: black;
+		}
+	}
+	&__block-title{
+		position: relative;
+		font-size: em(22);
+		color: white;
+		letter-spacing: em(-0.2);
+		font-weight: 400;
+		font-family: 'HelveticaNeue';
+	}
+	&__block-underline{
+		position: relative;
+		margin-top: em(10);
+	}
+	&__block-subtitle{
+		position: relative;
+		font-size: em(13);
+		letter-spacing: em(-0.2);
+		color: white;
+		opacity: 0.5;
+		margin-top: em(24);
+		line-height: 1.6;
+		font-family: 'HelveticaNeue';
+	}
+}
+
+@media (max-width: 1600px){
+	.how-it-works__meals,
+	.how-it-works__choose,
+	.how-it-works__deliveries,
+	.how-it-works__tasty{
+		width: em(300);
+	}
+	
+	.how-it-works__block-title{
+		font-size: em(28);
+	}
+	.how-it-works__block-subtitle{
+		font-size: em(24);
+	}
+}
+@media (max-width: 1100px){
+	.how-it-works__meals,
+	.how-it-works__choose,
+	.how-it-works__deliveries,
+	.how-it-works__tasty{
+		width: em(350);
+	}
+	
+	.how-it-works__block-title{
+		font-size: em(33);
+	}
+	.how-it-works__block-subtitle{
+		font-size: em(30);
+	}
+}
+@media (max-width: 540px){
+	.how-it-works__meals,
+	.how-it-works__choose,
+	.how-it-works__deliveries,
+	.how-it-works__tasty{
+		width: 100%;
+	}
+	.how-it-works__blocks{
+		display: flex;
+		flex-direction: column;
+		gap: em(70);
+		margin-top: em(65);
+	}
+	.how-it-works__block-title{
+		font-size: em(74);
+	}
+	.how-it-works__block-subtitle{
+		font-size: em(60);
+	}
+}

@@ -1,0 +1,113 @@
+.dish-of-the-day{
+	position: relative;
+	margin-top: em(90);
+	&__container{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+	&__dishes{
+		margin-top: em(25);
+	}
+	&__dish-underline{
+		margin-top: em(58);
+	}
+	&__list{
+		position: relative;
+		margin-top: em(60);
+		display: flex;
+		gap: em(30);
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+	}
+	&__rice,
+	&__eggs,
+	&__fish,
+	&__salat,
+	&__bento,
+	&__soup{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: start;
+		background-color: #252525;
+		width: em(350);
+		transition: .2s ease-in-out;
+		&:hover .dish-stars-style{
+			background: url(../../../public/img/stars.png);
+			background-size: contain;
+			background-repeat: no-repeat;
+		}
+		&:hover{
+			transform: scale(1.03);
+		}
+	}
+	&__rice-info,
+	&__eggs-info,
+	&__fish-info,
+	&__salat-info,
+	&__bento-info,
+	&__soup-info{
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		padding: em(30);
+	}
+	&__rice-marks,
+	&__eggs-marks,
+	&__fish-marks,
+	&__salat-marks,
+	&__bento-marks,
+	&__soup-marks{
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: em(30);
+	}
+}
+
+@media (max-width: 1600px){
+	.dish-of-the-day__soup,
+	.dish-of-the-day__rice,
+	.dish-of-the-day__eggs,
+	.dish-of-the-day__fish,
+	.dish-of-the-day__salat,
+	.dish-of-the-day__bento{
+		width: em(400);
+	}
+	
+}
+@media (max-width: 1100px){
+	.dish-of-the-day__soup,
+	.dish-of-the-day__rice,
+	.dish-of-the-day__eggs,
+	.dish-of-the-day__fish,
+	.dish-of-the-day__salat,
+	.dish-of-the-day__bento{
+		width: em(430);
+	}
+
+}
+@media (max-width: 540px){
+	.dish-of-the-day{
+		margin-top: 0;
+	}
+	.dish-of-the-day__dishes{
+		margin-top: em(10);
+	}
+	.dish-of-the-day__soup,
+	.dish-of-the-day__rice,
+	.dish-of-the-day__eggs,
+	.dish-of-the-day__fish,
+	.dish-of-the-day__salat,
+	.dish-of-the-day__bento{
+		width: em(630);
+	}
+
+}

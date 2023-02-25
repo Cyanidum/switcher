@@ -1,0 +1,26 @@
+.popup{
+	position: absolute;
+	width: 100%;
+	top: em(-470);
+	background-color: rgb(34, 34, 34);
+	z-index: 20;
+	padding: em(60) em(60);
+	transition: .3s ease-in-out;
+	&__container{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: em(50);
+		a{
+			color: #34C759;
+			font-size: em(48);
+			// text-transform: uppercase;
+			font-family: 'HelveticaNeue';
+			letter-spacing: em(2);
+		}
+	}
+}
+.popup.open-popup{
+	top: 0;
+}

@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'Helvetica-Black';
+    src: url('../../../public/fonts/HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('../../../public/fonts/HelveticaNeueBlackCondensed.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('../../../public/fonts/HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('../../../public/fonts/HelveticaNeueBoldCondensed.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'HelveticaNeue';
+    src: url('../../../public/fonts/HelveticaNeueLT-Roman.woff2') format('woff2'),
+        url('../../../public/fonts/HelveticaNeueLT-Roman.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Roboto-Regular';
+    src: url('../../../public/fonts/Roboto-Regular.woff2') format('woff2'),
+        url('../../../public/fonts/Roboto-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+

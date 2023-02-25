@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=contain">
+    <title>Switcher</title>
+    <link rel="stylesheet" href="./public/css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./public/css/style.min.css">
+  </head>
+  <body>
+    <div class="body-wrap">
+      <section class="header"> 
+        <div class="header__container container">
+          <div class="header__logo"> <img src="../../public/img/logo.png" alt=""></div>
+          <div class="header__nav"> <a href="#menu">Menu</a><a href="#recipes">Recipes</a><a href="#chefs">Chefs</a><a href="#contacts">Contacts</a></div>
+          <div class="header__burger-container"> 
+            <button class="header__burger-body" id="burger">
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+              <div class="header__burger-line"></div>
+            </button>
+          </div>
+        </div>
+        <section class="popup" id="popup">
+          <div class="popup__container"> <a href="#menu">Menu</a><a href="#recipes">Recipes</a><a href="#chefs">Chefs</a><a href="#contacts">Contacts</a></div>
+        </section>
+      </section>
+      <section class="description">
+        <div class="description__container description-container">
+          <div class="description__greetings"> 
+            <h1 class="description__title">Your <span class="bold">Favourite Food </span>Delivered <span class="bold">Hot & Fresh</span></h1>
+            <div class="description__subtitle">HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping &<br>marinating, so you can cook a fresh homemade dinner in just 15 minutes.</div>
+            <div class="description__button-container"><a href="#menu">Order Now</a></div>
+          </div>
+          <div class="description__contacts"> 
+            <div class="description__clock">
+              <div class="description__clock-icon"><img src="../../public/img/clock.png" alt=""></div>
+              <div class="description__clock-title">Today 10:00 am - 7:00 pm</div>
+              <div class="description__clock-subtitle">Working hours</div>
+            </div>
+            <div class="description__adress">
+              <div class="description__adress-icon"><img src="../../public/img/adress.png" alt=""></div>
+              <div class="description__adress-title">Velyka Vasylkivska 100</div>
+              <div class="description__adress-subtitle">Get Directions</div>
+            </div>
+            <div class="description__phone">
+              <div class="description__phone-icon"><img src="../../public/img/phone.png" alt=""></div>
+              <div class="description__phone-title">+38 (063)833 24 15</div>
+              <div class="description__phone-subtitle">Call Online</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="basics container"> 
+        <div class="basics__container">
+          <div class="basics__about ghost-text">about</div>
+          <div class="basics__info"> 
+            <div class="basics__title title-text">The Basics Of Healthy Food</div>
+            <div class="basics__subtitle">In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur<br>voluptate est. Eu minim dolore laboris enim mollit voluptate irure esse aliquip.</div>
+          </div>
+          <div class="basics__slider"> 
+            <div class="basics__prev-btn">
+              <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2717_14)">
+                  <path d="M1 30C1 13.9837 13.9837 1 30 1C46.0163 1 59 13.9837 59 30C59 46.0163 46.0163 59 30 59C13.9837 59 1 46.0163 1 30Z" fill="#262626" stroke="#303030" stroke-width="2"></path>
+                  <mask id="mask0_2717_14" style="mask-type:alpha" maskunits="userSpaceOnUse" x="22" y="22" width="16" height="16">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M38 29H25.83L31.42 23.41L30 22L22 30L30 38L31.41 36.59L25.83 31H38V29V29Z" fill="white"></path>
+                  </mask>
+                  <g mask="url(#mask0_2717_14)">
+                    <rect x="17" y="17" width="26" height="26" fill="#4D4D4D"></rect>
+                  </g>
+                </g>
+                <defs>
+                  <clippath id="clip0_2717_14">
+                    <rect width="60" height="60" fill="white"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+            <div class="basics__slider-body basicSlider">
+              <div class="swiper-wrapper">
+                <div class="basics__slide swiper-slide">
+                  <div class="basics__img"><img src="../../public/img/fish.png" alt=""></div>
+                </div>
+                <div class="basics__slide swiper-slide">
+                  <div class="basics__img"><img src="../../public/img/eggs.png" alt=""></div>
+                </div>
+              </div>
+            </div>
+            <div class="basics__next-btn">
+              <svg width="60" height="60" viewbox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_2717_15)">
+                  <path d="M59 30C59 13.9837 46.0163 1 30 1C13.9837 1 1 13.9837 1 30C1 46.0163 13.9837 59 30 59C46.0163 59 59 46.0163 59 30Z" fill="#262626" stroke="#303030" stroke-width="2"></path>
+                  <mask id="mask0_2717_15" style="mask-type:alpha" maskunits="userSpaceOnUse" x="22" y="22" width="16" height="16">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M22 29H34.17L28.58 23.41L30 22L38 30L30 38L28.59 36.59L34.17 31H22V29Z" fill="white"></path>
+                  </mask>
+                </g>
+                <g mask="url(#mask0_2717_15)">
+                  <rect width="26" height="26" transform="matrix(-1 0 0 1 43 17)" fill="#4D4D4D"></rect>
+                </g>
+                <defs>
+                  <clippath id="clip0_2717_15">
+                    <rect width="60" height="60" fill="white" transform="matrix(-1 0 0 1 60 0)"></rect>
+                  </clippath>
+                </defs>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-works">	
+        <div class="how-it-works__container container"> 
+          <div class="how-it-works__work ghost-text">work </div>
+          <div class="how-it-works__title title-text">How It Works </div>
+          <div class="how-it-works__underline underline"> </div>
+          <div class="how-it-works__blocks"> 
+            <div class="how-it-works__meals blocks-style">
+              <div class="how-it-works__block-title">Pick meals</div>
+              <div class="how-it-works__block-underline underline"></div>
+              <div class="how-it-works__block-subtitle">Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.</div>
+            </div>
+            <div class="how-it-works__choose blocks-style">
+              <div class="how-it-works__block-title">Choose how often</div>
+              <div class="how-it-works__block-underline underline"></div>
+              <div class="how-it-works__block-subtitle">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</div>
+            </div>
+            <div class="how-it-works__deliveries blocks-style">
+              <div class="how-it-works__block-title">Fast Deliveries</div>
+              <div class="how-it-works__block-underline underline"></div>
+              <div class="how-it-works__block-subtitle">Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.</div>
+            </div>
+            <div class="how-it-works__tasty blocks-style">
+              <div class="how-it-works__block-title">Tasty Meals</div>
+              <div class="how-it-works__block-underline underline"></div>
+              <div class="how-it-works__block-subtitle">Gobble makes cooking fast, so you have more time to unwind and be with family.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="dish-of-the-day"> 
+        <div class="dish-of-the-day__container dish-container"> 
+          <div class="dish-of-the-day__dishes ghost-text" id="menu">dishes </div>
+          <div class="dish-of-the-day__title title-text">Dish Of The Day </div>
+          <div class="dish-of-the-day__dish-underline underline"> </div>
+          <div class="dish-of-the-day__list"> 
+            <div class="dish-of-the-day__soup">
+              <div class="dish-of-the-day__soup-pic dish-pic-style"><img src="../../public/img/soup.png" alt=""></div>
+              <div class="dish-of-the-day__soup-info"> 
+                <div class="dish-of-the-day__soup-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__soup-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__soup-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__soup-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish-of-the-day__rice">
+              <div class="dish-of-the-day__rice-pic dish-pic-style"><img src="../../public/img/rice.png" alt=""></div>
+              <div class="dish-of-the-day__rice-info"> 
+                <div class="dish-of-the-day__rice-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__rice-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__rice-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__rice-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish-of-the-day__eggs">
+              <div class="dish-of-the-day__eggs-pic dish-pic-style"><img src="../../public/img/bread&amp;eggs.png" alt=""></div>
+              <div class="dish-of-the-day__eggs-info"> 
+                <div class="dish-of-the-day__eggs-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__eggs-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__eggs-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__eggs-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish-of-the-day__fish">
+              <div class="dish-of-the-day__fish-pic dish-pic-style"><img src="../../public/img/fish-dish.png" alt=""></div>
+              <div class="dish-of-the-day__fish-info"> 
+                <div class="dish-of-the-day__fish-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__fish-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__fish-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__fish-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish-of-the-day__salat">
+              <div class="dish-of-the-day__salat-pic dish-pic-style"><img src="../../public/img/salat.png" alt=""></div>
+              <div class="dish-of-the-day__salat-info"> 
+                <div class="dish-of-the-day__salat-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__salat-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__salat-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__salat-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+            <div class="dish-of-the-day__bento">
+              <div class="dish-of-the-day__bento-pic dish-pic-style"><img src="../../public/img/bento.png" alt=""></div>
+              <div class="dish-of-the-day__bento-info"> 
+                <div class="dish-of-the-day__bento-title dish-title-style">Featured Meal</div>
+                <div class="dish-of-the-day__bento-subtitle dish-sub-style">Served with french fries + drink</div>
+                <div class="dish-of-the-day__bento-text dish-text-style">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</div>
+                <div class="dish-of-the-day__bento-marks"> 
+                  <div class="dish-of-the-day__stars dish-stars-style"></div><a class="dish-of-the-day__button dish-btn-style" href="">ORDER</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="month-chefs" id="chefs">
+        <div class="month-chefs__container container"> 
+          <div class="month-chefs__chef ghost-text">chefs </div>
+          <div class="month-chefs__title title-text">This Month's Chefs </div>
+          <div class="month-chefs__chefs-underline underline"> </div>
+          <div class="month-chefs__chefs-cv"> 
+            <div class="month-chefs__gregory"> 
+              <div class="month-chefs__gregory-info"> 
+                <div class="month-chefs__profile profile-pic-style"><img src="../../public/img/gregory.png" alt=""></div>
+                <div class="month-chefs__profile-text"> 
+                  <div class="month-chefs__profile-name profile-name-style">Gregory Flores</div>
+                  <div class="month-chefs__profile-subname profile-subname-style">Chef of the cold</div>
+                </div>
+              </div>
+              <div class="month-chefs__gregory-collage"> 
+                <div class="month-chefs__gregory-dish-1 collage-01-style"><img src="../../public/img/greg-dish-01.png" alt=""></div>
+                <div class="month-chefs__gregory-dish-2 collage-02-style"><img src="../../public/img/greg-dish-02.png" alt=""></div>
+                <div class="month-chefs__gregory-dish-3 collage-03-style"><img src="../../public/img/greg-dish-03.png" alt=""></div>
+              </div>
+            </div>
+            <div class="month-chefs__annette"> 
+              <div class="month-chefs__annette-info"> 
+                <div class="month-chefs__profile profile-pic-style"><img src="../../public/img/annete.png" alt=""></div>
+                <div class="month-chefs__profile-text"> 
+                  <div class="month-chefs__profile-name profile-name-style">Annette Cooper</div>
+                  <div class="month-chefs__profile-subname profile-subname-style">Chef of the hot</div>
+                </div>
+              </div>
+              <div class="month-chefs__annette-collage"> 
+                <div class="month-chefs__annette-dish-1 collage-01-style"><img src="../../public/img/annette-dish-01.png" alt=""></div>
+                <div class="month-chefs__annette-dish-2 collage-02-style"><img src="../../public/img/annette-dish-02.png" alt=""></div>
+                <div class="month-chefs__annette-dish-3 collage-03-style"><img src="../../public/img/annette-dish-03.png" alt=""></div>
+              </div>
+            </div>
+            <div class="month-chefs__greg"> 
+              <div class="month-chefs__greg-info"> 
+                <div class="month-chefs__profile profile-pic-style"><img src="../../public/img/greg.png" alt=""></div>
+                <div class="month-chefs__profile-text"> 
+                  <div class="month-chefs__profile-name profile-name-style">Greg Fox</div>
+                  <div class="month-chefs__profile-subname profile-subname-style">Сhef macro kitchen</div>
+                </div>
+              </div>
+              <div class="month-chefs__greg-collage"> 
+                <div class="month-chefs__greg-dish-1 collage-01-style"><img src="../../public/img/fox-dish-01.png" alt=""></div>
+                <div class="month-chefs__greg-dish-2 collage-02-style"><img src="../../public/img/fox-dish-02.png" alt=""></div>
+                <div class="month-chefs__greg-dish-3 collage-03-style"><img src="../../public/img/fox-dish-03.png" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="recipes" id="recipes">
+        <div class="recipes__container container">
+          <div class="recipes__recipes ghost-text">recipes </div>
+          <div class="recipes__title title-text">Recipes From Our Chefs </div>
+          <div class="recipes__recipes-underline underline"> </div>
+          <div class="recipes__news">
+            <div class="recipes__news-main"> 
+              <div class="recipes__news-time side-eating-styles">breakfast</div>
+              <div class="recipes__news-date">05 Jul 2016</div>
+              <div class="recipes__news-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit</div>
+              <div class="recipes__news-author">Jason Keller</div>
+              <div class="recipes__news-popularity"> 
+                <div class="recipes__news-views side-views-styles"><img src="../../public/img/views.png" alt=""></div>
+                <div class="recipes__news-comments side-comments-styles"><img src="../../public/img/comments.png" alt=""></div>
+              </div>
+            </div>
+            <div class="recipes__news-side"> 
+              <div class="recipes__side-01">
+                <div class="recipes__side-01-title side-title-styles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</div>
+                <div class="recipes__side-01-info"> 
+                  <div class="recipes__side-01-time">
+                    <div class="recipes__side-01-lunch side-eating-styles">lunch</div>
+                    <div class="recipes__side-01-date side-date-styles">07 Jan 2016</div>
+                  </div>
+                  <div class="recipes__side-01-popularity"> 
+                    <div class="recipes__side-01-views side-views-styles"><img src="../../public/img/views.png" alt=""></div>
+                    <div class="recipes__side-01-comments side-comments-styles"><img src="../../public/img/comments.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipes__side-02">
+                <div class="recipes__side-02-title side-title-styles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</div>
+                <div class="recipes__side-02-info"> 
+                  <div class="recipes__side-02-time">
+                    <div class="recipes__side-02-lunch side-eating-styles">dinner</div>
+                    <div class="recipes__side-02-date side-date-styles">07 Jan 2016</div>
+                  </div>
+                  <div class="recipes__side-02-popularity"> 
+                    <div class="recipes__side-02-views side-views-styles"><img src="../../public/img/views.png" alt=""></div>
+                    <div class="recipes__side-02-comments side-comments-styles"><img src="../../public/img/comments.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+              <div class="recipes__side-03">
+                <div class="recipes__side-03-title side-title-styles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</div>
+                <div class="recipes__side-03-info"> 
+                  <div class="recipes__side-03-time">
+                    <div class="recipes__side-03-lunch side-eating-styles">sweets</div>
+                    <div class="recipes__side-03-date side-date-styles">07 Jan 2016</div>
+                  </div>
+                  <div class="recipes__side-03-popularity"> 
+                    <div class="recipes__side-03-views side-views-styles"><img src="../../public/img/views.png" alt=""></div>
+                    <div class="recipes__side-03-comments side-comments-styles"><img src="../../public/img/comments.png" alt=""></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="social-media" id="contacts">
+        <div class="social-media__container container"> 
+          <div class="social-media__social ghost-text">social</div>
+          <div class="social-media__title title-text">We in Social </div>
+          <div class="social-media__social-underline underline"> </div>
+          <div class="social-media__networks"> 
+            <div class="social-media__networks-twitter">
+              <div class="social-media__twitter-header">
+                <div class="social-media__twitter-logo"> 
+                  <div class="social-media__icon">
+                    <svg class="social-media__twitter-svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" fill="#262626" stroke="#303030" stroke-width="2"></path>
+                      <mask id="mask0_2740_2" style="mask-type:alpha" maskunits="userSpaceOnUse" x="11" y="13" width="18" height="15">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M28.4 15.1234C27.7819 15.405 27.1182 15.5951 26.4203 15.6796C27.1318 15.2424 27.6785 14.5499 27.9363 13.725C27.2699 14.1294 26.5326 14.4245 25.7476 14.5822C25.1185 13.8957 24.2226 13.4666 23.2306 13.4666C21.327 13.4666 19.7847 15.0486 19.7847 17.0005C19.7847 17.2772 19.8146 17.5476 19.8734 17.806C17.0089 17.6585 14.4693 16.2515 12.7689 14.1132C12.4728 14.6356 12.3026 15.2424 12.3026 15.8902C12.3026 17.1168 12.9113 18.198 13.8355 18.8323C13.271 18.8135 12.7395 18.6552 12.2748 18.3902C12.2743 18.4048 12.2743 18.4204 12.2743 18.4344C12.2743 20.1472 13.4621 21.5758 15.0391 21.9005C14.7503 21.9807 14.4457 22.0243 14.1311 22.0243C13.9085 22.0243 13.6932 22.0022 13.4831 21.9613C13.9211 23.3646 15.1945 24.3866 16.7022 24.4156C15.5233 25.3633 14.0371 25.9292 12.4224 25.9292C12.144 25.9292 11.8694 25.9126 11.6 25.8797C13.125 26.8812 14.9367 27.4666 16.8834 27.4666C23.2227 27.4666 26.6902 22.0814 26.6902 17.4108C26.6902 17.2579 26.686 17.1049 26.6797 16.9531C27.3534 16.455 27.9374 15.8331 28.4 15.1234Z" fill="white"></path>
+                      </mask>
+                      <g mask="url(#mask0_2740_2)">
+                        <rect x="7.86667" y="7.8667" width="24.2667" height="24.2667" fill="#737373"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="social-media__twitter-lable social-lable-styles">Twitter</div>
+                </div><a class="follow-btn-styles" href="">follow us</a>
+              </div>
+              <div class="social-media__twitter-body"> 
+                <div class="social-media__body-time social-date-styles">24 Jun at 16:20 pm</div>
+                <div class="social-media__body-text social-text-styles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</div>
+                <div class="social-media__body-author">@DennisFerguson</div>
+              </div>
+            </div>
+            <div class="social-media__networks-inst">
+              <div class="social-media__inst-header">
+                <div class="social-media__inst-logo"> 
+                  <div class="social-media__icon"> 
+                    <svg class="social-media__inst-svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" fill="#262626" stroke="#303030" stroke-width="2"></path>
+                      <mask id="mask0_5_167" style="mask-type:alpha" maskunits="userSpaceOnUse" x="12" y="12" width="16" height="16">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M27.0743 15.107C26.8839 14.6165 26.63 14.201 26.2145 13.7856C25.7991 13.3701 25.3836 13.1162 24.8931 12.9258C24.42 12.7412 23.8718 12.6142 23.0813 12.5796L23.0679 12.579C22.2821 12.5449 22.0197 12.5334 20 12.5334C17.9689 12.5334 17.715 12.5392 16.9187 12.5796C16.1224 12.6142 15.58 12.7412 15.1068 12.9258C14.6164 13.1162 14.2009 13.3701 13.7855 13.7856C13.37 14.201 13.1161 14.6165 12.9257 15.107C12.7411 15.5801 12.6141 16.1283 12.5795 16.9188L12.5789 16.9322C12.5447 17.718 12.5333 17.9805 12.5333 20.0001C12.5333 22.0312 12.5391 22.2851 12.5795 23.0814C12.6141 23.8777 12.7411 24.4201 12.9257 24.8933C13.1161 25.3837 13.37 25.7992 13.7855 26.2146C14.2009 26.6301 14.6164 26.884 15.1068 27.0744C15.58 27.2591 16.1282 27.386 16.9187 27.4206L16.9321 27.4212C17.7179 27.4554 17.9803 27.4668 20 27.4668C22.0311 27.4668 22.285 27.461 23.0813 27.4206C23.8776 27.386 24.42 27.2591 24.8931 27.0744C25.3836 26.884 25.7991 26.6301 26.2145 26.2146C26.63 25.7992 26.8839 25.3837 27.0743 24.8933C27.2589 24.4201 27.3859 23.8719 27.4205 23.0814L27.4211 23.068C27.4552 22.2822 27.4667 22.0198 27.4667 20.0001C27.4667 17.969 27.4609 17.7151 27.4205 16.9188C27.3859 16.1225 27.2589 15.5801 27.0743 15.107ZM25.5578 22.7579C25.5262 23.4223 25.4154 23.7862 25.3205 24.0235C25.1992 24.3399 25.0463 24.5719 24.809 24.8092C24.5717 25.0464 24.345 25.1941 24.0233 25.3206C23.7808 25.4156 23.4222 25.5263 22.7578 25.5579L22.7235 25.5594H22.7235C22.0282 25.5899 21.7952 25.6001 20 25.6001C18.1755 25.6001 17.9593 25.5948 17.2422 25.5579C16.5778 25.5263 16.2139 25.4156 15.9766 25.3206C15.6603 25.1994 15.4282 25.0464 15.191 24.8092C14.9537 24.5719 14.806 24.3451 14.6795 24.0235C14.5845 23.7809 14.4738 23.4223 14.4422 22.7579L14.4409 22.7294C14.4103 22.0295 14.4 21.7952 14.4 20.0001C14.4 18.1809 14.4053 17.9594 14.4422 17.2423C14.4738 16.5779 14.5845 16.2141 14.6795 15.9768C14.8007 15.6604 14.9537 15.4284 15.191 15.1911C15.4282 14.9538 15.655 14.8061 15.9766 14.6796C16.2192 14.5847 16.5778 14.4739 17.2422 14.4423L17.2707 14.441C17.9706 14.4104 18.205 14.4001 20 14.4001C21.8192 14.4001 22.0407 14.4054 22.7578 14.4423C23.4222 14.4739 23.7861 14.5847 24.0233 14.6796C24.3397 14.8009 24.5717 14.9538 24.809 15.1911C25.0463 15.4284 25.194 15.6551 25.3205 15.9768C25.4154 16.2193 25.5262 16.5779 25.5578 17.2423L25.5591 17.2708C25.5897 17.9707 25.6 18.2051 25.6 20.0001C25.6 21.802 25.5896 22.0364 25.5587 22.7375V22.7376L25.5578 22.7579ZM24.6667 16.2668C24.6667 16.7822 24.2488 17.2001 23.7333 17.2001C23.2179 17.2001 22.8 16.7822 22.8 16.2668C22.8 15.7513 23.2179 15.3334 23.7333 15.3334C24.2488 15.3334 24.6667 15.7513 24.6667 16.2668ZM20 16.2668C17.9396 16.2668 16.2667 17.9398 16.2667 20.0001C16.2667 22.0605 17.9396 23.7334 20 23.7334C22.0603 23.7334 23.7333 22.0605 23.7333 20.0001C23.7333 17.9398 22.0603 16.2668 20 16.2668ZM18.1333 20.0001C18.1333 21.0328 18.9716 21.8668 20 21.8668C21.0284 21.8668 21.8667 21.0285 21.8667 20.0001C21.8667 18.9674 21.0327 18.1334 20 18.1334C18.9673 18.1334 18.1333 18.9717 18.1333 20.0001Z" fill="white"></path>
+                      </mask>
+                      <g mask="url(#mask0_5_167)">
+                        <rect x="7.86664" y="7.8667" width="24.2667" height="24.2667" fill="#737373"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="social-media__inst-lable social-lable-styles">Instagram</div>
+                </div><a class="follow-btn-styles" href="">follow us</a>
+              </div>
+              <div class="social-media__inst-bg"></div>
+            </div>
+            <div class="social-media__networks-facebook">
+              <div class="social-media__facebook-header">
+                <div class="social-media__facebook-logo"> 
+                  <div class="social-media__icon">
+                    <svg class="social-media__facebook-svg" width="40" height="40" viewbox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M1 20C1 9.50659 9.50659 1 20 1C30.4934 1 39 9.50659 39 20C39 30.4934 30.4934 39 20 39C9.50659 39 1 30.4934 1 20Z" fill="#262626" stroke="#303030" stroke-width="2"></path>
+                      <mask id="mask0_5_168" style="mask-type:alpha" maskunits="userSpaceOnUse" x="16" y="11" width="9" height="18">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21.7189 28.4001V20.7366H24.1983L24.5667 17.7517H21.7189V15.8439C21.7189 14.9809 21.9499 14.3904 23.1428 14.3904H24.6667V11.7169C24.4044 11.678 23.4988 11.6001 22.4496 11.6001C20.2512 11.6001 18.7523 12.9952 18.7523 15.5519V17.7582H16.2667V20.7431H18.7523V28.4001H21.7189Z" fill="white"></path>
+                      </mask>
+                      <g mask="url(#mask0_5_168)">
+                        <rect x="7.86664" y="7.8667" width="24.2667" height="24.2667" fill="#737373"></rect>
+                      </g>
+                    </svg>
+                  </div>
+                  <div class="social-media__facebook-lable social-lable-styles">Facebook</div>
+                </div><a class="follow-btn-styles" href="">follow us</a>
+              </div>
+              <div class="social-media__facebook-body"> 
+                <div class="social-media__body-time social-date-styles">26 Jun at 16:20 pm</div>
+                <div class="social-media__body-text social-text-styles">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing Lorem ipsum dolor sit amet, consectetur adipiscing </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer"> 
+        <div class="footer__container">
+          <div class="footer__section-contacts"> 
+            <div class="footer__clock">
+              <div class="footer__clock-icon"><img src="../../public/img/clock.png" alt=""></div>
+              <div class="footer__clock-title">Today 10:00 am - 7:00 pm</div>
+              <div class="footer__clock-subtitle">Working hours</div>
+            </div>
+            <div class="footer__adress">
+              <div class="footer__adress-icon"><img src="../../public/img/adress.png" alt=""></div>
+              <div class="footer__adress-title">Velyka Vasylkivska 100</div>
+              <div class="footer__adress-subtitle">Get Directions</div>
+            </div>
+            <div class="footer__phone">
+              <div class="footer__phone-icon"><img src="../../public/img/phone.png" alt=""></div>
+              <div class="footer__phone-title">+38 (063)833 24 15</div>
+              <div class="footer__phone-subtitle">Call Online</div>
+            </div>
+          </div>
+          <div class="footer__lable"> 
+            <div class="footer__lable-pic"><img src="../../public/img/logo.png" alt=""></div>
+            <div class="footer__lable-copuright"><img src="../../public/img/© Yellow Snow.png" alt=""></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./public/js/swiper-bundle.min.js"></script>
+    <script src="./public/js/main.min.js"></script>
+  </body>
+</html>
